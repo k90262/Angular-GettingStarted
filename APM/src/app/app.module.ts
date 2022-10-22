@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.component';
+//import { ProductService } from './products/product.service';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { StarComponent } from './shared/start.component';
 
@@ -18,6 +19,7 @@ import { StarComponent } from './shared/start.component';
     BrowserModule,
     FormsModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]//,
+  //providers: [ProductService] // using when angular version < 6
 })
 export class AppModule { }

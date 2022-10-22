@@ -1,7 +1,9 @@
 import { Injectable } from "@angular/core";
 import { IProduct } from "./product";
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'  // using when angular version >= 6
+})
 export class ProductService {
 
     getProducts(): IProduct[] {
